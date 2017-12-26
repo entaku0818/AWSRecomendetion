@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+    each label in labels
+      p 
+        em=label.Name + ","
+        em=label.Confidence + '%'
+        //img(src= '/images/icon/' + label.Name)
+
+  img(src= '/images/' + image width="800" height="600" )
+
